@@ -32,6 +32,15 @@
   margin: 0;
 }
 
+/* Developer credit styling */
+#footer .developer-credit {
+  color: #6c757d;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
 /* Map container styles */
 .map-container {
   width: 100%;
