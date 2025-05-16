@@ -107,30 +107,32 @@
   margin-bottom: 0.5rem;
 }
 
-/* Background image styling - more specific selector to ensure override */
-#bg:before {
-  background-image: url("/images/bottles.jpeg") !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  opacity: 1 !important;
+/* Background image styling */
+#bg img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image scales properly without stretching */
+  z-index: -2;
 }
 
-/* Alternative approach if the above doesn't work */
-body #bg:before {
-  content: '';
-  background-image: url("images/bottles.jpeg") !important;
-  background-size: cover !important;
-  background-position: center !important;
-  opacity: 1 !important;
+/* Overlay with blur effect */
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 21, 25, 0.65); /* Darker overlay for better contrast */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: -1;
 }
 
-/* Adjust blur effect */
-#bg:after {
-  content: '';
-  background-color: rgba(19, 21, 25, 0.5); /* Semi-transparent overlay */
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+/* Remove the previous background styles that might be conflicting */
+#bg:before, #bg:after, body #bg:before {
+  content: none;
+  background-image: none;
 }
 
 /* Adjust the logo in the header to stand out against the new background */

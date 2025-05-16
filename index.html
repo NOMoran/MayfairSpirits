@@ -19,6 +19,14 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17045100291"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'AW-17045100291');
+	</script>
 </head>
 
 <body class="is-preload">
@@ -29,11 +37,12 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo">
-				<span class="icon fa-gem"></span>
+				<span class="icon"><img src="images/frontpageicon.jpg" alt="Mayfair Spirits Logo"
+						style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"></span>
 			</div>
 			<div class="content">
 				<div class="inner">
-					<h1>Mayfair Wine and Spirits</h1>
+					<h1>Mayfair Spirits, Wine & More</h1>
 					<p>Wauwatosa's Destination for Wine, Whiskey, and More</p>
 				</div>
 			</div>
@@ -71,7 +80,6 @@
 			<!-- Work -->
 			<article id="mission">
 				<h2 class="major">Mission</h2>
-				<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 				<p>At Mayfair Spirits, our mission is to provide our community with a curated selection of quality
 					wines, spirits, and craft beers, delivered with exceptional service and expert guidance. We strive
 					to create a welcoming space where every customer can discover the perfect drink for any occasion.
@@ -81,7 +89,6 @@
 			<!-- About -->
 			<article id="about">
 				<h2 class="major">About</h2>
-				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 				<p>Mayfair Spirits Wine & More</p>
 				<p>Located at 739 N Mayfair Rd, Wauwatosa, WI 53226, Mayfair Spirits Wine & More is your one-stop
 					destination for premium beverages. We offer a curated selection of fine wines, top-shelf spirits,
@@ -159,7 +166,8 @@
 						<em>emphasized</em>.
 						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
-							href="#">this is a link</a>.</p>
+							href="#">this is a link</a>.
+					</p>
 					<hr />
 					<h2>Heading Level 2</h2>
 					<h3>Heading Level 3</h3>
@@ -414,7 +422,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<!-- <a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a> -->
 					<!-- <a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a> -->
 				</div>
-				<p class="copyright">&copy; Untitled.</p>
+				<p class="copyright">&copy; Mayfair Spirits, Wine & More</p>
 			</div>
 		</footer>
 
@@ -422,8 +430,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	<!-- BG -->
 	<div id="bg">
-		<img src="images/bottles.jpeg" style="position: fixed; width: 100%; height: 100%; object-fit: cover; z-index: -2;">
-		<!-- The rest of your content -->
+		<div class="bg-overlay"></div>
+		<img src="images/bottles.jpeg"
+			style="position: fixed; width: 100%; height: 100%; object-fit: cover; z-index: -2;">
 	</div>
 
 	<!-- Scripts -->
